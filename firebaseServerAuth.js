@@ -1,1 +1,3 @@
-// Server auth firebase
+export const config = {
+    // Server auth firebase
+}

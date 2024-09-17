@@ -1,1 +1,3 @@
-// Firebase config
+export const config = {
+    // Firebase config
+}
