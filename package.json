@@ -12,6 +12,7 @@
   "dependencies": {
     "firebase": "^10.13.1",
     "flowbite": "^2.5.1",
+    "ioredis": "^5.4.1",
     "mongoose": "^8.6.2",
     "nuxt": "^3.13.0",
     "vue": "latest",

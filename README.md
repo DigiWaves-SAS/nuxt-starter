@@ -1,75 +1,58 @@
-# Nuxt 3 Minimal Starter
+# Progetto Nuxt 3 con MongoDB Atlas e Redis (Upstash)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Questo progetto è costruito utilizzando **Nuxt 3** e integra **MongoDB Atlas** per l'archiviazione dei dati e **Redis** tramite **Upstash** per la cache.
 
-## Setup
+## Prerequisiti
 
-Make sure to install the dependencies:
+Assicurati di avere installato:
+
+- **Node.js** versione 16 o superiore
+- **npm** o **yarn**
+
+## Configurazione del Progetto
+
+### 1. Clona il Repository
 
 ```bash
-# npm
+git clone https://github.com/DigiWaves-SAS/nuxt-starter.git .
+cd tuo-progetto
+```
+
+### 2. Elimina la cartella di GIT
+
+```bash
+rm -rf .git
+```
+
+### 3. Installa le dipendenze
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 4. Configura MongoDB Atlas
 
-Start the development server on `http://localhost:3000`:
+- Crea un nuovo cluster su MongoDB Atlas.
+- Configura l'accesso e crea un database e una collezione secondo le tue necessità.
+- Crea un utente con le giuste autorizzazioni e prendi nota della stringa di connessione (connection string) dal tab Connect.
+
+### 5. Configura Redis Upstash
+
+- Registrati su Upstash e crea un nuovo database Redis.
+- Copia l'URL e il token di autenticazione per Redis.
+
+### 6. Configura le variabili d'ambiente
+
+- Crea il file .env da .env-example
+```bash
+cp .env-example .env
+```
+- Incolla nelle relative variabili le stringhe di connessione
+
+### 7. Avvia lo sviluppo
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Happy coding! 🎉🎉
